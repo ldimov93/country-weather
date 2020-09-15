@@ -7,6 +7,11 @@ The application gives an option to the user to choose if they want to pin/unpin 
 
 To pin an item, first search for it, choose from the list of suggested results, hit 'Search country'. Afterwards, you will get the option to use the toggle pin/unpin feature.
 
+As the user types in to the input field, the search field offers results and suggestions based on the country name.
+The results are collected through an AJAX method that calls one of the APIs of https://RESTCountries.eu.
+
+The results of the current weather information of the country are collected through an AJAX method which calls one of the APIS of https://OpenWeatherMap.org.
+
 # Components:
 1. Search field - finds results no matter if the entered search query was lower or upper case
 2. List of results
@@ -17,13 +22,14 @@ To pin an item, first search for it, choose from the list of suggested results, 
         * Capital
         * Region (along with Subregion)
         * Local time at the country relative to the Users Browser Time
-        * Current Weather Information at the Country. Current Weather Information is defined by:
-            * Main Type (main)
-            * Description of the Type (description)
-            * Temperature (represented as Celsius)
-            * Min. Temperature (represented as Celsius)
-            * Max. Temperature (represented as Celsius)
-            * Humidity 
+        * Current Weather Information at the Country.
+    2. Current Weather Information is defined by:
+        * Main Type (main)
+        * Description of the Type (description)
+        * Temperature (represented as Celsius)
+        * Min. Temperature (represented as Celsius)
+        * Max. Temperature (represented as Celsius)
+        * Humidity
 
 # Assumptions:
 * Country search suggestions show up as the user types and when there are 3 or more characters in the input box
