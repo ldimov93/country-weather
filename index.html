@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-wrapper d-flex flex-column align-items-left justify-content-center m-5">
+      <div class="pinned-country-tags-container">
+        <h4>Pinned countries:</h4>
+        <div class="pinned-country-tags d-flex align-items-center mb-5"></div>
+      </div>
+     
+      <form id="searchform">
+        <h4>Enter country: </h4>
+        <input type="text" id="search-bar" autocomplete="off" />
+        <ul class="output" style="display:none;">
+        </ul>
+        <button type="submit" id="submit">Search Country</button>
+      </form>
+      <div class="country-tags mb-5"></div>
+
+      <div class="frame d-none">
+        <div class="modal-container">
+          <div id="modal" class="center">
+            <img src="http://100dayscss.com/codepen/alert.png" width="44" height="38" />
+            <p class="mb-4 error-msg"> <b><big>Oh snap!</big></b> <br>
+              <span class="error-msg-country-invalid d-none">Invalid country, please enter its partial or full name and then select it from the suggested dropdown list.</span>
+              <span class="error-msg-country-exists d-none">Country already exists, please enter its partial or full name and then select it from the suggested dropdown list.</span>
+            </p>
+            <button id="close">Dissmiss</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-container row d-flex flex-row">
+
+      </div>
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Patua+One' rel='stylesheet'
+        type='text/css'>
+    </div>
+  </div>
+ 
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/moment.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

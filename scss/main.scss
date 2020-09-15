@@ -1,0 +1,29 @@
+// ITCSS partial structure
+
+// 01. Settings
+@import '01-settings/settings.config';
+@import '01-settings/settings.animations';
+@import '01-settings/settings.breakpoints';
+@import '01-settings/settings.colors';
+@import '01-settings/settings.spacing';
+@import '01-settings/settings.typography';
+@import '01-settings/settings.z-layers';
+
+// 02. Tools
+@import '00-vendors/mq';
+@import '00-vendors/bootstrap/bootstrap';
+@import '02-tools/tools.animations';
+@import '02-tools/tools.clearfix';
+@import '02-tools/tools.hidden';
+@import '02-tools/tools.on-event';
+@import '02-tools/tools.placeholder';
+@import '02-tools/tools.spacing';
+
+// 06. Components
+@import '06-components/components.alert';
+@import '06-components/components.button';
+@import '06-components/components.searchbar';
+@import '06-components/components.tags';
+@import '06-components/components.modal';
+@import '06-components/components.tile';
+@import '06-components/components.toggle';
